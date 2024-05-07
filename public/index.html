@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Generator</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./output.css">
 </head>
 <body>
     <main class="bg-gradient-to-r from-blue-700 to-orange-400 h-screen">
         <div class="flex flex-col justify-center items-center pt-80">
-            <h1 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-100 to-blue-700 text-7xl ">GENERADOR DE QR</h1>
+            <h1 class="font-bold text-shadow text-transparent bg-clip-text bg-gradient-to-r from-orange-100 to-blue-700 text-7xl text-shadow ">GENERADOR DE QR</h1>
             <p class="font-medium text-white text-2xl pt-4">¡Ten la posibilidad de poder generar tu propio QR!</p>
             
-            <form action="/enviar" method="post" class="mt-10">
-                <input class="border border-white rounded-md font-bold py-2 px-16" type="text" id="url" name="url" placeholder="Ingresa un URL"> 
-                <button class="bg-white py-2 px-8 hover:bg-blue-100 rounded-md font-bold mx-4" type="submit">Listo</button>
+            <form action="/enviar" method="post" class="mt-10 flex justify-between">
+                <input class="text-md border w-[70%] border-white rounded-md py-2 pl-6 pr-32" type="text" id="url" name="url" placeholder="Ingresa un URL"> 
+                <button class="bg-white py-2 px-10 hover:bg-blue-100 rounded-md font-bold" type="submit">Listo</button>
             </form>
         </div>
 
